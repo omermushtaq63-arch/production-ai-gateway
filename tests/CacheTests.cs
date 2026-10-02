@@ -1,2 +1,3 @@
+using Xunit;
 using AiGateway;
 public class CacheTests { [Fact] public void CacheReturnsValue(){var c=new ResponseCache();var k=c.Key("hello");c.Set(k,"world");Assert.True(c.TryGet(k,out var v));Assert.Equal("world",v);} }
